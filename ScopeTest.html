@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Scope</h2>
+
+<p>A Global variable can be accessed from any script or function.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+let carName = "Volvo";
+let carModel = "V90";
+myFunction1();
+myFunction2();
+
+function myFunction1(){
+let carName = "Nissan";
+let carModel = "Bluebird";
+document.getElementById("demo1").innerHTML = "Function1: I can display " + carName 
++ " " + carModel;
+}
+
+function myFunction2(){
+document.getElementById("demo2").innerHTML = "Function2: I can display " + carName 
++ " " + carModel;
+}
+
+
+</script>
+
+</body>
+</html>
